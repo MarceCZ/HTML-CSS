@@ -2,62 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio1</title>
 </head>
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/ULIMA_logo.png" width="150px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/ULIMA_logo.png" alt="Logo de la Universidad" width="200px">
     <h1>Sobre nosotros</h1>
-    <p>ULima Social es una iniciativa que quiere mejorar la comunidad mediante la ejecución de <i>proyectos prácticos</i> que permiten solucionar problemas. Es un lugar donde se junta gente creativa, alrededor de grandes ideas.</p>
+    <p>ULima Social es una iniciativa que quiere mejorar la comunidad mediante la ejecución de <i>proyectos prácticos</i> que permiten solucionar problemas. Es un lugar donde se juntan gente creativa, alrededor de grandes ideas.</p>
+    <h2>Proyectos</h2>
+    <ul>
+        <li>Más buscados</li>
+        <ul>
+            <li><a href="#" target="_blank">Flying ducks</a></li>
+            <li><a href="#" target="_blank">Kitty kitty kitty</a></li>
+        </ul>
+        <li>Últimos</li>
+        <ul>
+            <li><a href="#" target="_blank">Avengers against Climate Change</a></li>
+            <li><a href="#" target="_blank">Facedog</a></li>
+        </ul>
+    </ul>
+    <h2>Cronograma</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora Tema</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>18:00 - 20:30 Registro<td></tr>
+                <tr><td>20:30 - 23:00 Charla</td></tr>
+        </tbody>
+    </table>
+    <h2>Regístrate!</h2>
+    <form action="/registrarse">
+    <label for="nombre">Nombre: <input type="text" name="DP" id="nombre" placeholder="Ingrese su nombre" required></label>
+    <br><label for="correo">Email: <input type="text" name="email" id="correo" placeholder="correo@ejemplo.com" required></label>
+    <br><label for="lugar">Lugar: <select name="ciudad" id="lugar">
+        <option value="Lima">Lima</option>
+        <option value="Arequipa">Arequipa</option>
+    </select></label>
+    <br><span>Género: </span>
+    <label for="femenino"><input type="radio" id="femenino" name="genero" checked>Femenino</label>
+    <label for="masculino"><input type="radio" name="genero" id="masculino">Masculino</label>
+    <br><label for="experiencia">Experiencia:
+        <br><textarea name="exp" id="experiencia" rows="3"></textarea>
+    </label>
+    <br><button type="submit">Régistrarse</button>
+    </form>
 </body>
-<h2>Projectos</h2>
-<ul>
-    <li>Más buscados</li>
-    <ul>
-        <li><a href="#"> Flying ducks</a></li>
-        <li><a href="#"> Kitty kitty kitty</a></li>
-    </ul>
-    <li>Últimos</li>
-    <ul>
-        <li><a href="#"> Avengers against Climate Change</a></li>
-        <li><a href="#"> Facedog</a></li>
-    </ul>
-</ul>
-
-<h2>Cronograma</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Hora</th>
-            <th>Tema</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>18:00 - 20:30 Registro</td>
-        </tr>
-        <tr>
-            <td>20:30 - 23:00 Charla</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>Regístrate!</h2>
-
-<span>Nombre: </span>
-<input type="text">
-<br/> <span>Email: </span> <input type="text">
-<br/> <span>Lugar: </span>
-<select>
-    <option val="Lima">Lima</option>
-    <option val="Arequipa">Arequipa</option>
-</select>
-<br/><span>Género: </span>
-<input type="radio" value="Femenino">Femenino
-<input type="radio" value="Masculino">Masculino
-<p>Experiencia: </p>
-<textarea rows="2"></textarea>
-<br><button>Regístrate</button>
-
 </html>
