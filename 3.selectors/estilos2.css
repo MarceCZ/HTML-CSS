@@ -1,0 +1,18 @@
+#top {
+    background-color: orange;
+}
+
+.borde-negro {
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+#mp {
+    width: 100px;
+}
+
+.im {
+    width: 300px;
+}
